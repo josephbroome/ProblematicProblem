@@ -46,14 +46,14 @@ namespace ProblematicProblem
             {
                 Console.Write("Would you like to see the current list of activities? Sure/No thanks: ");
                 string input = Console.ReadLine();
-                
+
                 if (input.ToLower() == "sure")
                 {
                     seeList = true;
                 }
                 else if (input.ToLower() == "no")
                 {
-                    
+
                     break;
                 }
                 else
@@ -70,21 +70,21 @@ namespace ProblematicProblem
                         Thread.Sleep(250);
                     }
                 }
-            } while (seeList==false) ;
+            } while (seeList == false);
             Console.WriteLine();
-            
+
             bool addToList = true;
             do
             {
 
                 Console.Write("Would you like to add any activities before we generate one? yes/no: ");
                 string useradd = Console.ReadLine();
-                
+
                 if (useradd.ToLower() == "yes")
                 {
                     addToList = true;
                 }
-                else if(useradd.ToLower() == "no")
+                else if (useradd.ToLower() == "no")
                 {
                     break;
                 }
@@ -94,7 +94,7 @@ namespace ProblematicProblem
                     Console.WriteLine();
                     addToList = false;
                 }
-            }while (addToList==false) ;
+            } while (addToList == false);
             Console.WriteLine();
             while (addToList)
             {
